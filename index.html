@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+
+
+    <title>Livraria</title>
+</head>
+
+<body>
+    <header class="header"></header>
+    <div class="header">
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <svg width="24px" height="24px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <style>
+                            .a,
+                            .b {
+                                fill: none;
+                                stroke: #000000;
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                            }
+
+                            .b {
+                                stroke-opacity: 0.9984;
+                            }
+                        </style>
+                    </defs>
+                    <path class="a"
+                        d="M40.5,5.5H7.5a2.0059,2.0059,0,0,0-2,2v33a2.0059,2.0059,0,0,0,2,2h33a2.0059,2.0059,0,0,0,2-2V7.5A2.0059,2.0059,0,0,0,40.5,5.5Z" />
+                    <path class="b"
+                        d="M27.7,16.5V31.6H20.2v-15A11.0318,11.0318,0,1,0,35,27a10.8174,10.8174,0,0,0-7.3-10.5Z" />
+                    <path class="a" d="M20.2,13.4h7.5" />
+                    <rect class="b" x="20.2" y="9.1" width="7.5" height="22.4" />
+                </svg>
+            </div>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a href="#books">Livros</a></li>
+                <li class="nav-item"><a href="#contato">Contato</a></li>
+            </ul>
+            <form class="search-form" action="#" method="get">
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" placeholder="O que você procura?">
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_15_152)">
+                                <rect width="24" height="24" fill="white" />
+                                <circle cx="10.5" cy="10.5" r="6.5" stroke="#000000" stroke-linejoin="round" />
+                                <path
+                                    d="M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L19.6464 20.3536ZM20.3536 19.6464L15.3536 14.6464L14.6464 15.3536L19.6464 20.3536L20.3536 19.6464Z"
+                                    fill="#000000" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_15_152">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+            </form>
+        </nav>
+    </div>
+    </header>
+    <!--Box de conteúdo-->
+    <section class="home  animate__animated animate__bounceInRight">
+        <div class="imgHome">
+            <img src="./img/editorial-reading-an-engaging-story-book-removebg-preview (1).png" alt="img">
+        </div>
+        <div class="boxContentHome">
+            <h1>Universo Literário</h1>
+            <p>Na Livraria Universo Literário, cada página vira uma nova aventura.
+                <br>Descubra hoje mesmo o próximo livro que vai transformar sua vida.
+            </p>
+            <a href="books" class="cta-button">Explore Nossa Coleção</a>
+        </div>
+    </section>
+    <!--Seção dos livros-->
+    <section id="books">
+        <h2> Lançamentos</h2>
+        <div class="book-container" id="book-container">
+        </div>
+       
+    </section>
+    <!--Seção do contato-->
+    <section id="contato">
+        <div class="contato-info">
+            <div class="info-item">
+                <h3><i class="bi bi-telephone"></i></h3>
+                <p>Telefone: (11) 1234-5678</p>
+            </div>
+            <div class="info-item">
+                <h3><i class="bi bi-credit-card-fill"></i></h3>
+                <p>Parcelamento em <br>até 5x sem juros</p>
+            </div>
+            <div class="info-item">
+                <h3><i class="bi bi-box2-heart"></i></h3>
+                <p> Entregamos em <br> todo o Brasil</p>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+
+
+
+</body>
+
+</html>

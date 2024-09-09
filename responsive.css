@@ -1,0 +1,32 @@
+/*Responsividade*/
+
+@media(max-width:900px) {
+    .home {
+        grid-template-areas: "img "
+            "conteudo";
+        margin: 0 20px;
+        height: 100%;
+    }
+
+    .imgHome {
+        justify-content: center;
+    }
+
+    .imgHome img {
+        width: 400px;
+    }
+
+    .boxContentHome {
+        padding: 10px 20px;
+    }
+
+    .boxContentHome p {
+        width: 200px;
+        text-align: center;
+    }
+
+    .boxContentHome a {
+        margin: 0 0 50px 0;
+    }
+
+}
